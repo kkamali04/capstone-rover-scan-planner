@@ -2,8 +2,8 @@
 
 Updated 2026-10-07. Objective: a minimal station planner and honest simulated preview, with a separate local manual rover controller.
 
-- Public repository: https://github.com/kkamali04/sure2-rover
-- Browser demo: https://kkamali04.github.io/sure2-rover/
+- Public repository: https://github.com/kkamali04/capstone-rover-scan-planner
+- Browser demo: https://kkamali04.github.io/capstone-rover-scan-planner/
 - Current template: 2 rows of 6 horizontal stations, each with 3 shared vertical heights (36 planned samples). XY and Z are in millimeters. Drag heights in Edit 2D > Z heights; the shared plan updates 3D. Settle defaults to 1.25 s and dwell to 2.5 s. Both are editable. Playback defaults to 5x: a modeled 5:54 sequence takes about 1:11 on screen. Motion assumptions remain 5 s per lift/park and 3 s per travel/turn.
 - Software evidence before publishing: 78 Python tests, 9 UI mock checks, 13 planner-core checks, DOM smoke, and 49 real-browser checks passed. These include calibration persistence/rejection, non-actuating draft compilation and raw-session ZIP download. Independent desktop/touch/standalone height-drag checks also passed. Tests and the runner are included; machine-specific logs remain local and excluded from Git.
 - Hardware status: physical positioning, turning calibration, lift motion/feedback and airflow acquisition remain unverified. Geometry is provisional. Preview movement is animation, not autonomous rover control or measured XY. Desired physical tolerance is 5 mm; no claim that it is achieved.
